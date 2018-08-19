@@ -1486,7 +1486,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .footer-copyright p {
     text-align: center;    
     font-size: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 0;
 }
 
@@ -1664,8 +1664,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 #back-to-top:after {
-    content: "\f106";
-    font-family: 'FontAwesome';
+    /*content: "\f106";
+    font-family: 'FontAwesome';*/
 }
 
 #back-to-top:hover {
@@ -1756,4 +1756,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     -webkit-transform:scale(0);
             transform:scale(0);
   }
+}
+
+/* custom */
+.invert{
+  -moz-transform:rotate(-180deg); /* Firefox */
+  -webkit-transform:rotate(-180deg); /* Webkit */        
+  -ms-transform:rotate(-180deg); /* IE */
+  -o-transform:rotate(-180deg); /* Opera */
+  transform:rotate(-180deg); /* future */
+  position:absolute;
 }
