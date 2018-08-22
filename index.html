@@ -45,11 +45,12 @@ layout: default
 				<!-- /service -->				
 				{% for idea in site.data.ideas %}
 				<div class="col-md-4 col-sm-6">
-					<div class="service">
+					<div class="service">						
 						<i class="{{ idea.icon }}"></i>
 						<h3>{{ idea.title }}</h3>
-						<p>{{ idea.description }}</p>
+						<p>{{ idea.description }}&nbsp;&nbsp;<a href="{{ idea.url }}"><i class="fas fa-info-circle" style="font-size: 20px; display: contents;"></i></a></p>
 					</div>
+					
 				</div>
 				{% endfor %}
 				<!-- /service -->				

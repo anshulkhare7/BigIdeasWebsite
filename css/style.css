@@ -318,7 +318,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 #nav.nav-transparent {
-    background: transparent;
+    background: black;
 }
 
 
@@ -1766,4 +1766,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   -o-transform:rotate(-180deg); /* Opera */
   transform:rotate(-180deg); /* future */
   position:absolute;
+}
+
+i.logo{
+    display: block !important;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+p i{
+    text-align: center;
 }
