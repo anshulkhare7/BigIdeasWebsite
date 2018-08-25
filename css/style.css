@@ -429,7 +429,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px 0px;
     }
     #nav.nav-transparent {
-        background: #FFF;
+        background: #E5E5E5;
     }
     .main-nav {
         position: fixed;
@@ -511,8 +511,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     float: right;
     width: 40px;
     height: 40px;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     cursor: pointer;
     z-index: 99999;
 }
@@ -1768,12 +1768,57 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   position:absolute;
 }
 
+.rotate{
+  -moz-transform:rotate(-90deg); /* Firefox */
+  -webkit-transform:rotate(-90deg); /* Webkit */        
+  -ms-transform:rotate(-90deg); /* IE */
+  -o-transform:rotate(-90deg); /* Opera */
+  transform:rotate(-90deg); /* future */
+  position:absolute;
+}
+
 i.logo{
     display: block !important;
     font-size: 40px;
-    margin-top: 10%;
+    margin: 30% 0% 0% 30%;
+    max-height: 50px;
+    display: block;
 }
 
 p i{
     text-align: center;
+}
+
+h2 i{
+    font-size: 50px;
+}
+/* Material icons - https://material.io/tools/icons/?style=baseline */
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.navbar{
+    min-height: 60px;
 }
