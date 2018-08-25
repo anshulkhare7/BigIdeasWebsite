@@ -1765,8 +1765,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   -webkit-transform:rotate(-180deg); /* Webkit */        
   -ms-transform:rotate(-180deg); /* IE */
   -o-transform:rotate(-180deg); /* Opera */
-  transform:rotate(-180deg); /* future */
-  position:absolute;
+  transform:rotate(-180deg); /* future */  
 }
 
 .rotate{
@@ -1774,8 +1773,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   -webkit-transform:rotate(-90deg); /* Webkit */        
   -ms-transform:rotate(-90deg); /* IE */
   -o-transform:rotate(-90deg); /* Opera */
-  transform:rotate(-90deg); /* future */
-  position:absolute;
+  transform:rotate(-90deg); /* future */  
 }
 
 i.logo{

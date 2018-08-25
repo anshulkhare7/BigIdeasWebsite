@@ -8,6 +8,11 @@
   description: "The bad drives out the good." 
   url: "/gl"
 
+- icon: "<i class=\"fas fa-smile invert\"></i>"
+  title:  "Inversion"
+  description: "Know what can kill you then don't do it."
+  url: "/invert"
+  
 - icon: "<i class=\"fas fa-hourglass-half\"></i>"
   title:  "Lindy Effect"
   description: "For that which lasted hundred years, a hundred more." 
@@ -37,11 +42,6 @@
   title:  "Redundancy"
   description: "Two kidneys, a spare key, & cash in the bank."
   url: "/red"
-
-- icon: "<i class=\"fas fa-smile invert\"></i>"
-  title:  "Inversion"
-  description: "Know what can kill you then don't do it."
-  url: "/invert"
 
 - icon: "<i class=\"material-icons rotate\">vertical_align_center</i>"
   title:  "Regression to Mean"
