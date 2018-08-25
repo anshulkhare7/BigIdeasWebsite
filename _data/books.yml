@@ -1,0 +1,14 @@
+- author: "Nassim Nicholas Taleb"
+  title: "Antifragile"
+  image: "./img/work1.jpg"
+  link: "https://amazon.in"
+
+- author: "Daniel Kahneman"
+  title: "Thinking, Fast and Slow"
+  image: "./img/work2.jpg"
+  link: "https://amazon.in"
+
+- author: "Robert Cialdini"
+  title: "Influence"
+  image: "./img/work3.jpg"
+  link: "https://amazon.in"  

@@ -7,10 +7,7 @@ layout: default
 	<!-- Header -->
 	{% include header.html %}
 	<!-- About -->
-	<!-- Portfolio -->	
-
-	<!-- Service -->
-	<div id="service" class="section md-padding">
+	<div id="about" class="section md-padding">
 
 		<!-- Container -->
 		<div class="container">
@@ -24,18 +21,18 @@ layout: default
 				</div>
 				<!-- /Section header -->
 
-				<!-- service -->				
+				<!-- about -->
 				{% for idea in site.data.ideas %}
-				<div class="col-md-4 col-sm-6">
-					<div class="service">	
-						{{ idea.icon }}						
+				<div class="col-md-4">
+					<div class="about">
+						{{ idea.icon }}	
 						<h3>{{ idea.title }}</h3>
-						<p>{{ idea.description }}&nbsp;&nbsp;<a href="{{ idea.url }}"><i class="fas fa-info-circle" style="font-size: 20px; display: contents;"></i></a></p>
+						<p>{{ idea.description }}</p>
+						<a href="{{ idea.url }}">Read more</a>
 					</div>
-					
 				</div>
 				{% endfor %}
-				<!-- /service -->				
+				<!-- /about -->
 
 			</div>
 			<!-- /Row -->
@@ -44,8 +41,11 @@ layout: default
 		<!-- /Container -->
 
 	</div>
-	<!-- /Service -->
+	<!-- /About -->
 
+	<!-- Portfolio -->	
+
+	<!-- Service -->	
 	<!-- Why Choose Us -->
 	<!-- Numbers -->
 	<!-- Pricing -->

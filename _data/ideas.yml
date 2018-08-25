@@ -1,6 +1,6 @@
 - icon: "<i class=\"fas fa-dumbbell\"></i>"
   title:  "Antifragilty"
-  description: "What doesn't kill me makes me stronger." 
+  description: "What doesn't kill me makes me stronger.<br>" 
   url: "/af"
 
 - icon: "<i class=\"fas fa-arrow-alt-circle-down\"></i>"
