@@ -11,19 +11,23 @@ layout: default
 
 		<!-- Container -->
 		<div class="container">
-
-			<!-- Row -->
 			<div class="row">
-
 				<!-- Section header -->
 				<div class="section-header text-center">
 					<h2 class="title">Big Ideas</h2>
-				</div>
+				</div>				
 				<!-- /Section header -->
-
+			</div>
+			<div class="row button-row">
+				<div class="col-md-12 button-margin">
+					<button id="btn-shuffle" class="btn btn-primary">Shuffle</button>
+				</div>					
+			</div>			
+			<!-- Row -->
+			<div id="idea-containter" class="row">				
 				<!-- about -->
 				{% for idea in site.data.ideas %}
-				<div class="col-md-4">
+				<div class="col-md-4 ideas">
 					<div class="about">
 						{{ idea.icon }}	
 						<h3>{{ idea.title }}</h3>
