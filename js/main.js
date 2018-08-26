@@ -93,12 +93,16 @@
 	///////////////////////////
 	// Custom
     $("#btn-shuffle").bind('click', shuffle);        
+	$("#btn-random").bind('click', show_random);        
 
     function shuffle(){		
+		$("#btn-shuffle").html("Shuffle");
         $("#idea-containter").each(function(){
             var divs = $(this).find('.ideas');
-            for(var i = 0; i < divs.length; i++) 
+            for(var i = 0; i < divs.length; i++){ 
+				$(divs[i]).show();
 				$(divs[i]).remove();            
+			}
             //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
             var i = divs.length;
             if ( i == 0 ) 
@@ -117,6 +121,16 @@
         });                    
     }
 
+	function show_random(){
+		$("#btn-shuffle").html("Show All");	
+		$("#idea-containter").each(function(){
+            var divs = $(this).find('.ideas');			
+			var rand = Math.floor( Math.random() * ( divs.length + 1 ) );
+            for(var i = 0; i < divs.length; i++) 
+				$(divs[i]).hide();
+			$(divs[rand]).show();	
+		});
+	}
 	// $('#btn-shuffle').click(function(){
     //     var ideaslength = $('.ideas').length;
 	// 	var idea = $('.ideas').first();
