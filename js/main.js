@@ -92,11 +92,13 @@
 
 	///////////////////////////
 	// Custom
-    $("#btn-shuffle").bind('click', shuffle);        
+    $("#btn-shuffle").bind('click', shuffle);
+	$("#btn-shuffle-2").bind('click', shuffle);        
 	$("#btn-random").bind('click', show_random);        
+	$("#btn-random-2").bind('click', show_random);        
 
     function shuffle(){		
-		$("#btn-shuffle").html("Shuffle");
+		$("#btn-shuffle").html("SHUFFLE THE DECK");
         $("#idea-containter").each(function(){
             var divs = $(this).find('.ideas');
             for(var i = 0; i < divs.length; i++){ 
@@ -122,20 +124,19 @@
     }
 
 	function show_random(){
-		$("#btn-shuffle").html("Show All");	
+		$("#btn-shuffle").html("SHOW ALL IDEAS");	
 		$("#idea-containter").each(function(){
             var divs = $(this).find('.ideas');			
-			var rand = Math.floor( Math.random() * ( divs.length + 1 ) );
-            for(var i = 0; i < divs.length; i++) 
-				$(divs[i]).hide();
-			$(divs[rand]).show();	
+			var rand = Math.floor( Math.random() * ( divs.length ) );			
+			for(var i = 0; i < divs.length; i++){ 
+				$(divs[i]).show();					
+			}
+
+            for(var i = 0; i < divs.length; i++){ 
+				if(i!=rand)
+					$(divs[i]).hide();
+			}			
 		});
 	}
-	// $('#btn-shuffle').click(function(){
-    //     var ideaslength = $('.ideas').length;
-	// 	var idea = $('.ideas').first();
-	// 	// alert(idea.html());
-	// 	// $('#idea-container').a;
-    // });
 
 })(jQuery);

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: home
 ---
 
 
@@ -19,30 +20,29 @@ layout: default
 				<!-- /Section header -->
 			</div>
 			<div class="row button-row">
-				<div class="col-sm-12 col-md-6 button-margin">
-					<button id="btn-shuffle" class="btn btn-primary">Shuffle</button>
+				<div class="col-sm-12 col-md-6 custom-button">
+					<button id="btn-shuffle" class="btn btn-primary">Shuffle The Deck</button>
 				</div>					
-				<div class="col-sm-12 col-md-6 button-margin">
-					<button id="btn-random" class="btn btn-primary">Random</button>
+				<div class="col-sm-12 col-md-6 custom-button">
+					<button id="btn-random" class="btn btn-primary">Show Random Idea</button>
 				</div>					
 			</div>			
 			<!-- Row -->
 			<div id="idea-containter" class="row">				
 				<!-- about -->
 				{% for idea in site.data.ideas %}
-				<div class="col-md-4 ideas">
+				<div class="col-xs-6 col-sm-3 col-md-4 ideas">
 					<div class="about">
 						{{ idea.icon }}	
 						<h3>{{ idea.title }}</h3>
 						<p>{{ idea.description }}</p>
-						<a href="{{ idea.url }}">Read more</a>
+						<!--<a href="{{ idea.url }}">More >></a>-->
 					</div>
 				</div>
 				{% endfor %}
 				<!-- /about -->
-
 			</div>
-			<!-- /Row -->
+			<!-- /Row -->		
 
 		</div>
 		<!-- /Container -->
