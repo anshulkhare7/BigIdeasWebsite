@@ -629,7 +629,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     padding: 40px 20px;
     border: 1px solid #EEE;
     margin: 15px 0px;
-    height: 250px;
+    height: 200px;
 }
 
 .about i {

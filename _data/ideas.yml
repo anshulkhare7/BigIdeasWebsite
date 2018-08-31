@@ -58,3 +58,27 @@
   description: "It's the last straw that breaks the Camel's back."
   url: "/critmass" 
   
+- icon: ""
+  title:  "Social Proof"
+  description: "Monkey see monkey do."
+  url: "/socialp" 
+  
+- icon: ""
+  title:  "Incentive Bias"
+  description: "What gets measured, gets rewarded, gets gamed."
+  url: "/incentives" 
+
+- icon: ""
+  title:  "Red Queen Effect"
+  description: "Arms race, inflation, and running on the treadmill."
+  url: "/redqueen"
+  
+- icon: ""
+  title:  "Physics Envy"
+  description: "It's better to be approximately right than precisely wrong."
+  url: "/physics"
+
+- icon: ""
+  title:  "Matthew Effect"
+  description: "It's easier for wise to get wiser and rich to get richer."
+  url: "/matthew"
