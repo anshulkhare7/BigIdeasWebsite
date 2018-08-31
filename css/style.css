@@ -434,7 +434,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .main-nav {
         position: fixed;
         right: 0;
-        height: calc(100vh - 80px);
+        /*height: calc(100vh - 80px);*/
         -webkit-box-shadow: 0px 80px 0px 0px #1C1D21;
         box-shadow: 0px 80px 0px 0px #1C1D21;
         max-width: 250px;
