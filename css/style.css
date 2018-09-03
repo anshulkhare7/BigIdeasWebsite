@@ -362,7 +362,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .has-dropdown>a:before {
         font-family: 'FontAwesome';
-        content: "\f054";
+        content: "";
         font-size: 6px;
         margin-left: 6px;
         float: right;
@@ -1029,7 +1029,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .team-img>img {
-  width: 100%;
+  width: 100%;  
 }
 
 .team .overlay {
@@ -1833,4 +1833,30 @@ h2 i{
 
 button{
     text-transform: uppercase;
+}
+
+/* floating button */
+body{
+  width: 100%;
+  height: 100%;
+}
+.btn-group-sm .btn-fab{
+  position: fixed !important;
+  right: 29px;
+}
+.btn-group .btn-fab{
+  position: fixed !important;
+  right: 20px;
+}
+#main{
+  bottom: 20px;
+}
+#mail{
+  bottom: 80px
+}
+#sms{
+  bottom: 125px
+}
+#autre{
+  bottom: 170px
 }

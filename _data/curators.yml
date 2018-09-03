@@ -1,0 +1,14 @@
+- name: "Anshul Khare"
+  image: "anshul.jpeg"
+  linkedin: "https://www.linkedin.com/in/anshulkhare/"
+  twitter: "https://www.linkedin.com/in/anshulkhare/"
+
+- name: "Prashanth Jnanendra"
+  image: "prashanth.jpeg"
+  linkedin: "https://www.linkedin.com/in/prashanthjnanendra/"
+  twitter: "https://twitter.com/metoosharp"
+
+- name: "Vikas Kasturi"
+  image: "vikas.jpeg"
+  linkedin: "https://www.linkedin.com/in/vikas-kasturi/"
+  twitter: "https://twitter.com/VikasKasturi"

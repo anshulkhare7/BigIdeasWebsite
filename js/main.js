@@ -99,6 +99,7 @@
 
     function shuffle(){		
 		$("#btn-shuffle").html("SHUFFLE THE DECK");
+		$("#btn-shuffle-2").html("SHUFFLE");
         $("#idea-containter").each(function(){
             var divs = $(this).find('.ideas');
             for(var i = 0; i < divs.length; i++){ 
@@ -124,7 +125,8 @@
     }
 
 	function show_random(){
-		$("#btn-shuffle").html("SHOW ALL IDEAS");	
+		$("#btn-shuffle").html("SHOW ALL IDEAS");
+		$("#btn-shuffle-2").html("SHOW ALL");		
 		$("#idea-containter").each(function(){
             var divs = $(this).find('.ideas');			
 			var rand = Math.floor( Math.random() * ( divs.length ) );			
@@ -138,5 +140,15 @@
 			}			
 		});
 	}
+
+	/* floating button */ 
+	$("#main").click(function() {
+	$("#mini-fab").toggleClass('hidden');
+	});
+
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();  
+	});
+	$.material.init();
 
 })(jQuery);

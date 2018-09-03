@@ -1,0 +1,92 @@
+---
+layout: default
+title: curators
+---
+
+
+<body>
+	<!-- Header -->
+	{% include header.html %}
+	<!-- About -->
+	<!-- Portfolio -->	
+	<!-- Service -->	
+	<!-- Why Choose Us -->
+	<!-- Numbers -->
+	<!-- Pricing -->
+	<!-- Testimonial -->
+	<!-- Team -->
+	<div id="team" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Curators</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- team -->
+				{% for curator in site.data.curators %}
+				<div class="col-sm-4">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="./img/{{curator.image}}" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="{{curator.linkedin}}"><i class="fab fa-linkedin"></i></a>									
+									<a href="{{curator.twitter}}"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>{{curator.name}}</h3>
+							<!--<span>Web Designer</span>-->
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<!-- /team -->
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Team -->	
+
+	<!-- Blog -->	
+	<!-- Contact -->
+
+	<!-- Footer -->
+	{% include footer.html %}
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"><i class="fas fa-angle-double-up"></i></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- jsDeliver -->
+
+</body>

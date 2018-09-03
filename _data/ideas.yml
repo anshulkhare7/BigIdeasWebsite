@@ -82,3 +82,33 @@
   title:  "Matthew Effect"
   description: "It's easier for wise to get wiser and rich to get richer."
   url: "/matthew"
+
+- icon: ""
+  title:  "Veblen Effect"
+  description: "High price signals high quality. Invitation to imitators and counterfeiters."
+  url: "/veblen"
+
+- icon: ""
+  title:  "Hanlon's Razor"
+  description: "Don't ascribe to malice which can be explained by incompetence."
+  url: "/hanlon"
+
+- icon: ""
+  title:  "Margin of Safety"
+  description: "Looking both ways before crossing a one-way street."
+  url: "/mos"
+
+- icon: ""
+  title:  "Domain Dependence"
+  description: "Domain Dependence	A chess grandmaster isn't necessarily a good stategist."
+  url: "/dode"  
+
+- icon: ""
+  title:  "Authority Bias"
+  description: "I believe you because you look like an expert."
+  url: "/authority"  
+
+- icon: ""
+  title:  "Ben Franklin Effect"
+  description: "Do me a favour and then you'll start liking me."
+  url: "/benfrank"  
