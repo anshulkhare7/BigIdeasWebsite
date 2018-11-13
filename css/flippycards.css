@@ -41,7 +41,7 @@ body {
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
 }
 .card__side--front {
-  background-color: #FFF;
+  background-color: #F9fafa;
 }
 .card__side--back {
   color: #FFF;
