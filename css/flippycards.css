@@ -1,0 +1,99 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: avenir;
+}
+
+.content {
+  height: 60vh;
+  /*height: 95vh;*/
+  /*width: 95%;*/
+  /*background: #6195FF;*/
+  /*margin: 2em auto;*/
+  text-align: center;
+  /*padding: 4em 0;*/
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  /*width: 25%;*/
+  width: 100%;
+  position: relative;
+  height: 25em;
+  perspective: 150em;
+}
+.card__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25em;
+  backface-visibility: hidden;
+  transition: all .6s ease;
+  box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+}
+.card__side--front {
+  background-color: #FFF;
+}
+.card__side--back {
+  color: #FFF;
+  transform: rotateY(180deg);
+}
+
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #91B5FC, #4367B1);
+}
+/*.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}*/
+/*.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #2998FF, #5643FA);
+}*/
+/*.card__side--back-X {
+  background-image: linear-gradient(to right bottom, #FFB900, #FF7730);
+}*/
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotate(0);
+}
+.card__description {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  padding: 1em 0;  
+  height: 20vh;
+}
+.card__details{
+  font-size: 1.4em;
+  padding: 1em;  
+}
+.card__info{
+    font-size: 1em;
+    padding: 2em;  
+    color: #fff;
+    text-align: justify;
+}
+
+.card__info .read_more_link {
+    text-align: center;
+}
+
+.card__info .read_more_link a{
+  color: #F8BC32;
+  font-size: 1.2em;
+}
+
+.card__description svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #FFF;
+}
