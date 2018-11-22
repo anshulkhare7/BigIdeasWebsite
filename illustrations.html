@@ -1,0 +1,108 @@
+---
+layout: default
+title: Illustrations
+---
+
+
+<body>
+	<!-- Header -->
+	{% include header.html %}
+	<!-- About -->
+	<div id="about" class="section md-padding">
+		<!-- floating button -->		
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Safal Niveshak Illustrations</h2>
+				</div>				
+				<!-- /Section header -->
+			</div>			
+			<div class="row button-row hidden-md hidden-lg">
+				<div class="col-sm-12 col-md-6 custom-button">
+					<button id="btn-shuffle" class="btn btn-primary">Shuffle The Deck</button>
+				</div>					
+				<div class="col-sm-12 col-md-6 custom-button">
+					<button id="btn-random" class="btn btn-primary">Show Random Idea</button>
+				</div>					
+			</div>						
+			<!-- Row -->
+			<div id="idea-containter" class="row">
+				{% for idea in site.data.illustrations %}
+				<div class="col-md-4 ideas">	
+					<section class="content">
+						<div class="cards">
+							<div class="card">
+								<div class="card__side card__side--front card__side--front-1">
+									<div class="card__description">{{ idea.title }}</div>
+									<!--<div class="card__details">{{ idea.description }}</div>-->
+									</div>
+								<div class="card__side card__side--back card__side--back-2">
+								<div class="card__info">									
+									<img src="{{ idea.img-url }}">																		
+									<div class="enlarge_link">See Bigger Image<div>
+								</div>								
+								</div>
+							</div>									
+						</div>
+					</section>
+				</div>		
+				{% endfor %}
+				<div class="popup-show">
+					<div class="overlay"></div>
+					<div class="img-show">
+						<span><i class="material-icons">close</i></span>
+						<img src="">
+					</div>
+				</div>
+			</div>
+			<!-- /Row -->		
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+	<!-- Portfolio -->	
+
+	<!-- Service -->	
+	<!-- Why Choose Us -->
+	<!-- Numbers -->
+	<!-- Pricing -->
+	<!-- Testimonial -->
+	<!-- Team -->	
+	<!-- Blog -->	
+	<!-- Contact -->
+
+	<!-- Footer -->
+	{% include footer.html %}
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"><i class="fas fa-angle-double-up"></i></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/image-popup.js"></script>
+	<!-- jsDeliver -->
+
+	<!-- Social Share (www.sharethis.com) -->
+	<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b88ed508e496b00101b7798&product=inline-share-buttons' async='async'></script>
+
+</body>
