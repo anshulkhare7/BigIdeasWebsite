@@ -1,6 +1,6 @@
 ---
 layout: default
-title: home
+title: Illustrations
 ---
 
 
@@ -15,7 +15,7 @@ title: home
 			<div class="row">
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Big Ideas</h2>
+					<h2 class="title">Safal Niveshak Illustrations</h2>
 				</div>				
 				<!-- /Section header -->
 			</div>			
@@ -29,26 +29,33 @@ title: home
 			</div>						
 			<!-- Row -->
 			<div id="idea-containter" class="row">
-				{% for idea in site.data.ideas %}
+				{% for idea in site.data.illustrations %}
 				<div class="col-md-4 ideas">	
 					<section class="content">
 						<div class="cards">
 							<div class="card">
 								<div class="card__side card__side--front card__side--front-1">
-								<div class="card__description">{{ idea.title }}</div>
-								<div class="card__details">{{ idea.description }}</div>
-								</div>
+									<div class="card__description">{{ idea.title }}</div>
+									<!--<div class="card__details">{{ idea.description }}</div>-->
+									</div>
 								<div class="card__side card__side--back card__side--back-2">
-								<div class="card__info">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of.<br>
-									<div class="read_more_link"><a href="{{ idea.url }}">Read More</a><div>
-								</div>
+								<div class="card__info">									
+									<img src="{{ idea.img-url }}?{{site.time | date: '%s%N'}}">																		
+									<div class="enlarge_link">See Bigger Image<div>
+								</div>								
 								</div>
 							</div>									
 						</div>
 					</section>
 				</div>		
 				{% endfor %}
+				<div class="popup-show">
+					<div class="overlay"></div>
+					<div class="img-show">
+						<span><i class="material-icons">close</i></span>
+						<img src="">
+					</div>
+				</div>
 			</div>
 			<!-- /Row -->		
 		<!-- /Container -->
@@ -92,6 +99,7 @@ title: home
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/image-popup.js"></script>
 	<!-- jsDeliver -->
 
 	<!-- Social Share (www.sharethis.com) -->
