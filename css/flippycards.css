@@ -18,6 +18,18 @@ body {
   /*padding: 4em 0;*/
 }
 
+@media only screen and (max-width: 767px) {
+  .content {
+    height: 60vh;
+    /*height: 95vh;*/
+    /*width: 95%;*/
+    /*background: #6195FF;*/
+    /*margin: 2em auto;*/
+    text-align: center;
+    /*padding: 4em 0;*/
+  }
+}
+
 .cards {
   display: flex;
   justify-content: space-evenly;
