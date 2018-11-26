@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Illustrations
+title: home
 ---
 
 
@@ -40,8 +40,10 @@ title: Illustrations
 									</div>
 								<div class="card__side card__side--back card__side--back-2">
 								<div class="card__info">									
-									<img src="{{ idea.img-url }}?{{site.time | date: '%s%N'}}">																		
-									<div class="enlarge_link">See Bigger Image<div>
+									<img src="{{ idea.thumbnail-url }}.jpg?{{site.time | date: '%s%N'}}">																		
+									<div class="enlarge_link"><span class="bigger_image_text">See Bigger Image</span><div>
+									<div class="enlarge_link"><a href="{{ idea.img-url }}.jpg" download>Download Image</a></div>
+									<div id="popup-image-src" style="display: none">{{ idea.img-url }}.jpg</div>
 								</div>								
 								</div>
 							</div>									
