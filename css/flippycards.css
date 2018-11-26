@@ -179,9 +179,9 @@ body {
     top: 10px;
     right: 10px;
     z-index: 99;
-    cursor: pointer;
-    background-color: #F8BC32;
-    border-radius: 20px; 
+    cursor: pointer;    
+    font-size: 33px;
+    color: red;
 }
 .img-show img{
     width: 100%;

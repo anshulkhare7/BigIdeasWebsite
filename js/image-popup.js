@@ -11,6 +11,7 @@ $(function () {
     });
     
     $("span, .overlay").click(function () {
+        $(".img-show img").attr("src", "");
         $(".popup-show").fadeOut();
     });    
 });
